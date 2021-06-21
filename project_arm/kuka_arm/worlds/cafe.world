@@ -104,26 +104,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='kinematics_bin'>
-        <pose frame=''>0 2.5 0.204873 0 0 -0.006466</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose frame=''>0 2.5 0.204873 0 0 -0.006466</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.42424 0.020946 4.04499 1.74618 0.135168 -3.14135</acceleration>
-          <wrench>0.42424 0.020946 4.04499 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='kinematics_shelf'>
-        <pose frame=''>2.7 0 1.036 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose frame=''>2.7 0 1.036 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
@@ -135,7 +115,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='cafe'>
+    <model name='plane'>
       <static>1</static>
       <link name='link'>
         <collision name='main_floor'>

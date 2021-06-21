@@ -24,7 +24,6 @@ test_cases = {1:[[[2.16135,-1.42635,1.55109],
 
 def test_code(test_case):
     ## Set up code
-    ## Do not modify!
     x = 0
     class Position:
         def __init__(self,EE_pos):
@@ -53,8 +52,9 @@ def test_code(test_case):
     
 
     ## Inverse_Kinematics_code
-    
+    ##########################################
     ## Forward_kinematics
+    
     # Create symbols for DH param
     q1, q2, q3, q4, q5, q6, q7 = symbols('q1:8')                                 # joint angles theta
     d1, d2, d3, d4, d5, d6, d7 = symbols('d1:8')                                 # link offsets
@@ -198,15 +198,6 @@ def test_code(test_case):
         theta4 = atan2(R3_6[2,2], -R3_6[0,2])
         theta6 = atan2(-R3_6[1,1],R3_6[1,0])
 
-    ########################################################################################
-    ## For additional debugging add your forward kinematics here. Use your previously calculated thetas
-    ## as the input and output the position of your end effector as your_ee = [x,y,z]
-
-    ## For error analysis please set the following variables of your WC location and EE location in the format of [x,y,z]
-    your_wc = [WC[0],WC[1],WC[2]]       # <--- Load your calculated WC values in this array
-    your_ee = [FK[0,3],FK[1,3],FK[2,3]] # <--- Load your calculated end effector value from your forward kinematics
-
-    ########################################################################################
     ## Error analysis
 
     print ("\nTotal run time to calculate joint angles from pose is %04.4f seconds" % (time()-start_time))
